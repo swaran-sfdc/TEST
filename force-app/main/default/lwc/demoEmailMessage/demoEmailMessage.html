@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Create Email Message DEMO" icon-name="standard:email">
+        <div class="slds-p-around_medium">
+            <lightning-input label="TO" value={receiverId} onchange={handleInputChange} data-id="receiverId" required></lightning-input>
+            <lightning-input label="CC" value={receiverId} onchange={handleInputChange} data-id="receiverId" required></lightning-input>
+            <lightning-input label="BCC" value={receiverId} onchange={handleInputChange} data-id="receiverId" required></lightning-input>
+            <lightning-input label="Subject" value={subject} onchange={handleInputChange} data-id="subject" required></lightning-input>
+            <lightning-textarea label="Body" value={body} onchange={handleInputChange} data-id="body" required></lightning-textarea>
+            <lightning-button label="Create Email" onclick={handleCreateEmail} class="slds-m-top_medium"></lightning-button>
+        </div>
+    </lightning-card>
+</template>

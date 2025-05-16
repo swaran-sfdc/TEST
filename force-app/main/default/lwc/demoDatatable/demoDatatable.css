@@ -1,0 +1,8 @@
+:host {
+    --slds-checkbox-color-background: purple;
+    /* Other CSS custom properties here */
+  }
+
+  .otherclass{
+    display: none;
+  }

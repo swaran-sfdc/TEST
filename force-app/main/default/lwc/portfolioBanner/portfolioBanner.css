@@ -1,0 +1,75 @@
+.banner{
+    background: #f2f2f0;
+    min-height: 300px;
+    text-align: center;
+    padding: 32px 16px;
+    
+}
+
+.custom-banner{
+    height: 16rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('/resource/LinkedInImage')
+}
+    
+.profile-pic{
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    border: 5px double #515151;
+}
+
+.name{
+    font-size: 32px;
+    font-weight: 700;
+}
+.designation, .location{
+    font-size: 24px;
+    color: #243763;
+}
+.social-icon{
+    height: 40px;
+    width: 40px;
+    margin: 16px 16px 0px 0px;
+}
+.circle{
+    display: inline-flex;
+    position:relative;
+    width:200px;
+    height:200px;
+    svg{
+      fill:none;
+      stroke:#8a3ab9;
+      stroke-linecap: round;
+      stroke-width:3;
+      stroke-dasharray: 1;
+      stroke-dashoffset: 0;
+      animation: stroke-draw 6s ease-out infinite alternate; 
+    }
+    img{
+      position:absolute;
+      left:50%;
+      top:50%;
+      transform:translate(-50%, -50%);
+      width: 150px;
+      height: 150px;
+      border-radius:50%;
+    }
+  }
+  @keyframes stroke-draw {
+    from{
+      stroke:#8a3ab9;
+      stroke-dasharray: 1;
+    }
+    to{
+      stroke:#cd486b;
+      transform:rotate(180deg);
+      stroke-dasharray: 8;
+    }
+  }
+
+  .custom-margin{
+    margin-top: 4rem;
+  }
