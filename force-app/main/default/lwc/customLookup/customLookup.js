@@ -43,6 +43,7 @@ export default class CustomLookup extends LightningElement {
 
     //to manage the click to open or close the slds dropdown.
     renderedCallback() {
+        console.log('renderedCallback');
         let self = this;
 
         this.template.querySelector(`[data-id="combo-input"]`)
